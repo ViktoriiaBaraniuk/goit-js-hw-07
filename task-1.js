@@ -12,7 +12,8 @@ console.log(`В списке ${lengthNavItemEl} категории`); */
 
 /* 2. Выводит в консоль текст заголовка элемента(тега h2) и количество элементов в
 категории */
-listOfItems.forEach(item => console.log(`Категория: ${item.querySelector('h2').textContent}\n`, `Количество: ${ item.querySelectorAll('li').length}`));
+listOfItems.forEach(item => console.log(`Категория: ${item.querySelector('h2').textContent}\n`, 
+`Количество: ${ item.querySelectorAll('li').length}`));
 
 
 

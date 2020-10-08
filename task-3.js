@@ -20,9 +20,13 @@ const images = [
   },
 ];
 const picture = document.querySelector('#gallery');
-const imagesList = images.reduce((string, item) => 
+/* const imagesList = images.reduce((string, item) => 
   string + `<li><img src = ${item.url} alt = '${item.alt}' width="650" height="450" class="item"></li>`, ''
-)
+) */
+/* или  */
+const imagesList = images.reduce((string, {url, alt}) => 
+  string + `<li><img src = ${url} alt = '${alt}' width="650" height="450" class="item"></li>`, ''
+) 
 picture.insertAdjacentHTML('afterbegin', imagesList);
 picture.classList.add("images");
  
